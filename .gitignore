@@ -1,0 +1,13 @@
+# Dépendances Composer
+vendor/
+
+# Fichiers sensibles
+backend/config/generer_hash.php
+.env
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Node modules (pour React plus tard)
+node_modules/
