@@ -70,9 +70,7 @@ switch ($methode) {
 
             // Calculer l'expiration (heure prévue + 15 min)
             $heure_debut  = strtotime($creneau['semaine_debut'] . ' ' . $creneau['heure_debut']);
-            $qr_expire    = date('Y-m-d H:i:s', $heure_debut + (15 * 60));
-
-            // Sauvegarder le token en base
+            $qr_expire = date('Y-m-d H:i:s', time() + (30 * 60));
             $update = $conn->prepare(
                 "UPDATE creneaux 
                  SET qr_token = :token, qr_expire = :expire 
