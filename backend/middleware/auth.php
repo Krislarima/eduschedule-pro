@@ -1,7 +1,6 @@
 <?php
 // =============================================
 // EduSchedule Pro - Middleware Authentification
-// Auteur : Krislarima
 // =============================================
 
 require_once __DIR__ . '/../../vendor/autoload.php';

@@ -2,7 +2,6 @@
 date_default_timezone_set('Africa/Ouagadougou');
 // =============================================
 // EduSchedule Pro - Connexion Base de Données
-// Auteur : Krislarima
 // =============================================
 
 class Database {

@@ -1,7 +1,6 @@
 <?php
 // =============================================
 // EduSchedule Pro - Configuration CORS
-// Auteur : Krislarima
 // =============================================
 
 // Autoriser les requêtes depuis React (port 5173)

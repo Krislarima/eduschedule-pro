@@ -1,7 +1,6 @@
 <?php
 // =============================================
 // EduSchedule Pro - API Salles
-// Auteur : Krislarima
 // =============================================
 
 require_once __DIR__ . '/../../backend/config/cors.php';
