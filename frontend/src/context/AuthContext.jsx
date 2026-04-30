@@ -51,6 +51,7 @@ export function AuthProvider({ children }) {
             login,
             logout,
             estConnecte
+            
         }}>
             {children}
         </AuthContext.Provider>

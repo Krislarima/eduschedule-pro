@@ -10,6 +10,7 @@ import DashboardAdmin from "./pages/DashboardAdmin"
 import DashboardEnseignant from "./pages/DashboardEnseignant"
 import DashboardDelegue from "./pages/DashboardDelegue"
 import EmploiTempsPage from "./pages/EmploiTempsPage"
+import EmploiTempsAdmin from "./pages/EmploiTempsAdmin"
 
 export default function App() {
   return (
@@ -30,6 +31,13 @@ export default function App() {
             </PrivateRoute>
           } />
 
+          {/* Emploi du temps Admin */}
+          <Route path="/emploi-temps" element={
+            <PrivateRoute roles={["admin"]}>
+              <EmploiTempsAdmin />
+            </PrivateRoute>
+          } />
+
           {/* Routes Enseignant */}
           <Route path="/dashboard/enseignant" element={
             <PrivateRoute roles={["enseignant"]}>
@@ -44,9 +52,9 @@ export default function App() {
             </PrivateRoute>
           } />
 
-          {/* Emploi du temps - accessible à tous */}
-          <Route path="/emploi-temps" element={
-            <PrivateRoute roles={["admin","enseignant","delegue","surveillant","etudiant"]}>
+          {/* Emploi du temps consultation */}
+          <Route path="/emploi-temps-view" element={
+            <PrivateRoute roles={["enseignant","delegue","surveillant","etudiant"]}>
               <EmploiTempsPage />
             </PrivateRoute>
           } />
