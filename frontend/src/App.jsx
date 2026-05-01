@@ -11,6 +11,7 @@ import DashboardEnseignant from "./pages/DashboardEnseignant"
 import DashboardDelegue from "./pages/DashboardDelegue"
 import EmploiTempsPage from "./pages/EmploiTempsPage"
 import EmploiTempsAdmin from "./pages/EmploiTempsAdmin"
+import CahierTextePage from "./pages/CahierTextePage"
 
 export default function App() {
   return (
@@ -56,6 +57,13 @@ export default function App() {
           <Route path="/emploi-temps-view" element={
             <PrivateRoute roles={["enseignant","delegue","surveillant","etudiant"]}>
               <EmploiTempsPage />
+            </PrivateRoute>
+          } />
+
+          {/* Cahiers de texte */}
+          <Route path="/cahiers" element={
+            <PrivateRoute roles={["admin","delegue","enseignant","surveillant"]}>
+              <CahierTextePage />
             </PrivateRoute>
           } />
 

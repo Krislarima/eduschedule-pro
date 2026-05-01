@@ -19,6 +19,7 @@ export default function DashboardLayout({ children }) {
     const menusAdmin = [
         { icon: "📊", label: "Tableau de bord", path: "/dashboard/admin" },
         { icon: "📅", label: "Emploi du temps", path: "/emploi-temps" },
+        { icon: "📝", label: "Cahiers de texte", path: "/cahiers" },
         { icon: "👨‍🏫", label: "Enseignants", path: "/enseignants" },
         { icon: "🎓", label: "Classes", path: "/classes" },
         { icon: "📚", label: "Matières", path: "/matieres" },
@@ -28,14 +29,16 @@ export default function DashboardLayout({ children }) {
 
     const menusEnseignant = [
         { icon: "📊", label: "Tableau de bord", path: "/dashboard/enseignant" },
-        { icon: "📅", label: "Mes séances", path: "/mes-seances" },
+        { icon: "📅", label: "Mes séances", path: "/emploi-temps-view" },
+        { icon: "📝", label: "Cahiers de texte", path: "/cahiers" },
         { icon: "💰", label: "Mes vacations", path: "/mes-vacations" },
     ]
 
     const menusDelegue = [
         { icon: "📊", label: "Tableau de bord", path: "/dashboard/delegue" },
-        { icon: "📅", label: "Emploi du temps", path: "/emploi-temps" },
+        { icon: "📅", label: "Emploi du temps", path: "/emploi-temps-view" },
         { icon: "📝", label: "Cahiers de texte", path: "/cahiers" },
+        { icon: "📜", label: "Historique", path: "/cahiers" },
     ]
 
     const menusSurveillant = [
